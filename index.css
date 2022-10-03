@@ -1,0 +1,141 @@
+*{
+   box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font: size 1.35em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:black;
+    background-color: tomato;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin:auto; 
+}
+
+header{
+    background-color: rgb(249, 248, 248);
+}
+
+header .logo{
+     margin: 0;
+     padding: 25px 30px;
+     font-weight: bold;
+     color:tomato;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+        ,url("imagenes/boom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#hero h1{
+    color:black;
+}
+
+#somos-proya{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mis-actividades{
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#mis-actividades .container{
+    text-align: center;
+}
+
+#mis-actividades.carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 12px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      )
+      ,url("imagenes/ccats.jpg")
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      )
+      ,url("imagenes/ccats.jpg")
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      )
+      ,url("imagenes/ccats.jpg")
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    height: 80vh;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100)
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
